@@ -1,0 +1,101 @@
+ body{
+     margin: 0 auto;
+ }                               
+                                /* heder */
+.logo_img{
+    width: 65px;
+    margin-left: 30px;
+}
+.logo_img:hover{
+    transition: 0.3s;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+    cursor: pointer;
+}
+.header-container{
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list{
+    display: flex;
+    color: white;
+}
+.nav-list_item{
+    list-style-type: none;
+    margin: 5px 15px;
+}
+.nav-list_item__link{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+.nav-list_item:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    color: #bdae82;
+}
+                              /* main */
+.main{
+    background-image: url('assets/img/forest.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+   
+    background-size: cover;
+}
+.btn-play{
+    background-color: rgba(238, 238, 238, 0);
+    border: none;
+    background-image: url(assets/svg/play.svg);
+    background-size: 145px;
+    width: 145px;
+    height: 145px;
+}
+.btn-play:hover{
+    cursor: pointer;
+    filter: brightness(.85);
+}
+.btn-pause{
+    background-image: url(assets/svg/pause.svg);
+}
+                                       /* footer */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: calc(100% - 40px); */
+    
+
+    margin: 0 auto;
+    padding: 5px 20px;
+    font-size: 20px;
+    background-color: black;
+}
+.footer_link{
+    display: flex;
+    color: white;
+}
+.footer_link__item{
+    list-style: none;
+}
+.footer_link__item-a{
+    text-decoration: none;
+    color: white;
+}
+.footer_link__item-a:hover{
+    transition: 0.3s;
+    color: #bdae82;
+}
+.footer_rs__item-img{
+    height: 30px;
+}
+.active{
+    color: #bdae82;
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+}
